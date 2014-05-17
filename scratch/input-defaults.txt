@@ -1,0 +1,6 @@
+default ns3::LteEnbNetDevice::UlBandwidth "25"
+default ns3::LteEnbNetDevice::DlBandwidth "25"
+default ns3::LteEnbNetDevice::DlEarfcn "100"
+default ns3::LteEnbNetDevice::UlEarfcn "18100"
+
+
