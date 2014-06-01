@@ -1,0 +1,10 @@
+% scheduler  IMSI       RxBytes 
+FdBet        3          318734
+FdMt         3          315744 
+FdTbfq       3          2020
+PssFf        3          315744
+RrFf         3          318734
+TdBet        3          315744
+TdMt         3          315744
+TdTbfq       3          0
+Tta          3          315744

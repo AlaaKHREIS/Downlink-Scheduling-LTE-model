@@ -1,0 +1,10 @@
+% scheduler  IMSI       RxBytes 
+FdBet        15         318734 
+FdMt         15         315744  
+FdTbfq       15         3125 
+PssFf        15         315744 
+RrFf         15         318734 
+TdBet        15         315744 
+TdMt         15         315744 
+TdTbfq       15         315744
+Tta          15         315744 

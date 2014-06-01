@@ -109,7 +109,7 @@ Ptr<PointToPointEpcHelper> epcHelper = CreateObject<PointToPointEpcHelper> ();
 lteHelper->SetEpcHelper (epcHelper);
 
 //Set LTE Scheduler
-//Cofingure LTE MAC Scheduler - your choice
+//Configure LTE MAC Scheduler - your choice
 int choice;
 cout << "Choose one of the following schedulers" << endl;
 cout << "1-FdMtFfMacScheduler"<< endl;
@@ -261,11 +261,11 @@ enbPhy->SetAttribute ("NoiseFigure", DoubleValue (5.0));
 for (int i=0; i < m_nUser; i++)
         {
       Ptr<ConstantPositionMobilityModel> mm = ueNodes.Get (i)->GetObject<ConstantPositionMobilityModel> ();
-	  mm->SetPosition (Vector (m_dist+ i * 2, 0.0, 0.0));
+	  mm->SetPosition (Vector (m_dist+ 2 * i, 0.0, 0.0));
       Ptr<LteUeNetDevice> lteUeDev = ueDevs.Get (i)->GetObject<LteUeNetDevice> ();
       Ptr<LteUePhy> uePhy = lteUeDev->GetPhy ();
       uePhy->SetAttribute ("TxPower", DoubleValue (23.0));
-      uePhy->SetAttribute ("NoiseFigure", DoubleValue (5.0 + i * 0.8));
+      uePhy->SetAttribute ("NoiseFigure", DoubleValue (5.0 + 2 * i ));
         }
 
 // UDP connection from remote to UEnodes
